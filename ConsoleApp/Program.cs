@@ -93,7 +93,7 @@ namespace ConsoleApp
                             if (decimal.TryParse(Console.ReadLine(), out decimal depositAmount))
                             {
                                 account.Deposit(depositAmount);
-                                Console.WriteLine($"Счет пополнен на {depositAmount}");
+                                Console.WriteLine($"Счет пополнен на {depositAmount}. Осталось: {account.Balance}.");
                             }
                             else
                             {
